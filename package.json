@@ -1,0 +1,20 @@
+{
+  "name": "contador-de-caixa",
+  "version": "2.0.0",
+  "description": "Contador de caixa físico (cédulas e moedas) com login e histórico persistido em banco de dados.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "cookie-parser": "^1.4.7",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.7.0"
+  }
+}

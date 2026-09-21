@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Entrar — Contador de Caixa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+rel="stylesheet"
+/>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<main class="auth">
+<header class="auth__header">
+<p class="app-header__title">Contador de Caixa</p>
+<p class="app-header__subtitle">Controle de cédulas, moedas e movimentações</p>
+</header>
+
+<section class="panel" aria-labelledby="auth-title">
+<h1 id="auth-title" class="panel__title">Entrar</h1>
+
+<form id="auth-form">
+<label class="field-label" for="email">E-mail</label>
+<input id="email" class="input" type="email" autocomplete="email" required autofocus />
+
+<label class="field-label" for="password">Senha</label>
+<input id="password" class="input" type="password" autocomplete="current-password" required />
+<p id="password-hint" class="form-hint" hidden>Mínimo de 8 caracteres.</p>
+
+<p id="auth-error" class="form-error" role="alert" hidden></p>
+
+<button id="auth-submit" type="submit" class="btn btn-primary btn-block">Entrar</button>
+</form>
+
+<p class="auth__switch">
+<span id="switch-text">Ainda não tem conta?</span>
+<button id="switch-mode" type="button" class="link-button">Criar conta</button>
+</p>
+</section>
+</main>
+
+<script type="module" src="login.js"></script>
+</body>
+</html>
